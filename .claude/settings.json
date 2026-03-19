@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git init:*)",
+      "WebSearch",
+      "Bash(open /Users/ostiimac/Forge/primary-vault/04-REPOSITORIES/04-REPOSITORIES-flowji/the-tarrant-website/index.html)",
+      "mcp__plugin_chrome-dev-tools-mcp_chrome-devtools__navigate_page",
+      "mcp__plugin_chrome-dev-tools-mcp_chrome-devtools__take_screenshot",
+      "Read(//tmp/**)",
+      "Read(//private/tmp/**)",
+      "mcp__plugin_chrome-dev-tools-mcp_chrome-devtools__evaluate_script",
+      "WebFetch(domain:unsplash.com)",
+      "mcp__plugin_chrome-dev-tools-mcp_chrome-devtools__new_page",
+      "mcp__plugin_chrome-dev-tools-mcp_chrome-devtools__wait_for",
+      "mcp__plugin_chrome-dev-tools-mcp_chrome-devtools__close_page",
+      "Bash(npx surge:*)",
+      "Bash(gh repo:*)",
+      "Bash(gh org:*)",
+      "Bash(git add:*)"
+    ]
+  }
+}
