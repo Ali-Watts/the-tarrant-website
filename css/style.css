@@ -242,6 +242,20 @@ section {
   letter-spacing: 0.04em;
 }
 
+.limited-time {
+  display: inline-block;
+  font-family: 'Jost', sans-serif;
+  font-size: 0.65rem;
+  font-weight: 500;
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-right: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid var(--gold);
+  border-radius: 2px;
+}
+
 .product-intro-image {
   aspect-ratio: 4/5;
   overflow: hidden;
