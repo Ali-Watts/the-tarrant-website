@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Tarrant Collective — Hand-Stitched Leather Carry</title>
+  <meta name="description" content="The Tarrant — Origin. Hand-stitched leather. Every device. One slim object. Designed and made in Melbourne.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&family=Cormorant+Garamond:wght@400;500;600&family=Bodoni+Moda:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="logo">The Tarrant <span>Collective</span></div>
+    <ul class="nav-links">
+      <li><a href="#product">The Origin</a></li>
+      <li><a href="#craft">Craftsmanship</a></li>
+      <li><a href="#story">Story</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <div class="hero-tag">Hand-stitched leather. Every device. One slim object.</div>
+      <h1 style="font-family: 'Cormorant Garamond', serif;">A new kind of everyday essential.</h1>
+      <p>The Tarrant &mdash; Origin is precision-engineered leather carry, designed for the intentional person who values well-made objects and carries them with purpose.</p>
+      <a href="#product" class="btn btn-primary">Shop The Tarrant &mdash; Origin</a>
+    </div>
+  </section>
+
+  <!-- PRODUCT INTRO -->
+  <section id="product" class="product-intro">
+    <div class="product-intro-grid">
+      <div class="product-intro-text fade-up">
+        <div class="section-tag">The first in its story</div>
+        <h2 class="section-title">The Tarrant &mdash; Origin</h2>
+        <p>Not a bag. Not a case. Slim, deliberate, and precisely engineered &mdash; The Origin holds every essential a modern professional carries, and turns over into a flat working surface.</p>
+        <p>Made from full-grain leather, hand-stitched with contrast thread detail, with a moulded internal pocket structure that organises everything from your laptop to your keys.</p>
+        <ul class="product-features-list">
+          <li>Full-grain leather, hand-stitched construction</li>
+          <li>Moulded internal pocket system</li>
+          <li>D-ring carry hardware with strap</li>
+          <li>Converts to a flat working surface</li>
+          <li>Holds: laptop, stylus, iPhone, AirPods, charger, keys, glasses</li>
+        </ul>
+        <div class="product-price"><span class="limited-time">Limited Time</span> $599 <span>AUD</span></div>
+      </div>
+      <div class="product-intro-image fade-up">
+        <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=800&q=80"
+             alt="The Tarrant Origin — leather carry organiser" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- COLOURWAYS -->
+  <section id="colourways" class="colourways-section">
+    <div class="colourways-header fade-up">
+      <div class="section-tag">Three colourways at launch</div>
+      <h2 class="section-title">Choose your Origin</h2>
+    </div>
+    <div class="colourways-grid">
+      <div class="colourway-card fade-up">
+        <div class="colourway-image colourway-midnight">
+          <img src="https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=600&q=80"
+               alt="Midnight colourway" loading="lazy">
+        </div>
+        <div class="colourway-info">
+          <h3>Midnight</h3>
+          <p>Deep rich black, silver hardware, contrast white stitching</p>
+          <div class="colourway-price">$599 <span>AUD</span></div>
+          <button class="btn btn-cart" onclick="handleCart(this, 'Midnight')">Add to cart</button>
+        </div>
+      </div>
+      <div class="colourway-card fade-up">
+        <div class="colourway-image colourway-slate">
+          <img src="https://images.unsplash.com/photo-1590874103328-eac38a683ce7?w=600&q=80"
+               alt="Slate colourway" loading="lazy">
+        </div>
+        <div class="colourway-info">
+          <h3>Slate</h3>
+          <p>Complex cool charcoal, subtle and architectural</p>
+          <div class="colourway-price">$599 <span>AUD</span></div>
+          <button class="btn btn-cart" onclick="handleCart(this, 'Slate')">Add to cart</button>
+        </div>
+      </div>
+      <div class="colourway-card fade-up">
+        <div class="colourway-image colourway-natural">
+          <img src="https://images.unsplash.com/photo-1473188588951-666fce8e7c68?w=600&q=80"
+               alt="Natural colourway" loading="lazy">
+        </div>
+        <div class="colourway-info">
+          <h3>Natural</h3>
+          <p>Raw pale leather, gold hardware, extraordinary visible grain</p>
+          <div class="colourway-price">$599 <span>AUD</span></div>
+          <button class="btn btn-cart" onclick="handleCart(this, 'Natural')">Add to cart</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section id="features" class="features-section">
+    <div class="features-header fade-up">
+      <div class="section-tag">Engineered for purpose</div>
+      <h2 class="section-title">Every detail considered</h2>
+      <p>No gimmicks, no filler. Just thoughtful engineering for how you actually carry your essentials.</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card fade-up">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+        </div>
+        <h3>Precision pocket system</h3>
+        <p>Moulded internal compartments hold your laptop, phone, AirPods, charger, keys and glasses &mdash; each in its own engineered slot.</p>
+      </div>
+      <div class="feature-card fade-up">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3>Dual-purpose design</h3>
+        <p>Carry your essentials, then turn it over to reveal a flat working surface. One object, two modes &mdash; from transit to desk in a single gesture.</p>
+      </div>
+      <div class="feature-card fade-up">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 000-7.78z"/></svg>
+        </div>
+        <h3>Hand-stitched detail</h3>
+        <p>Contrast thread stitching on darker colourways. Every stitch placed by hand &mdash; not for show, but because it holds better and ages with character.</p>
+      </div>
+      <div class="feature-card fade-up">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        </div>
+        <h3>D-ring carry system</h3>
+        <p>Solid hardware with an included carry strap. Designed for movement &mdash; from the studio to the site meeting without breaking stride.</p>
+      </div>
+      <div class="feature-card fade-up">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+        </div>
+        <h3>Slim architectural profile</h3>
+        <p>Looks like it holds nothing. Holds everything. The Origin defies its proportions &mdash; a slim silhouette that conceals a complete carry system.</p>
+      </div>
+      <div class="feature-card fade-up">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+        </div>
+        <h3>Full-grain leather</h3>
+        <p>Not bonded. Not corrected. Full-grain leather that develops a rich patina over years of use. Your Origin will age as distinctly as you do.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CRAFTSMANSHIP -->
+  <section id="craft" class="craft-section">
+    <div class="craft-grid">
+      <div class="craft-image fade-up">
+        <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=800&q=80"
+             alt="Leather craftsmanship detail" loading="lazy">
+      </div>
+      <div class="craft-text fade-up">
+        <div class="section-tag">Craftsmanship</div>
+        <h2 class="section-title">Made by hand, not by machine</h2>
+        <p>Each Origin begins as flat hides selected for grain quality and consistency. The leather is cut, the pocket moulds are formed, and the internal structure is shaped before any stitching begins.</p>
+        <p>Hand-stitching is not a decorative choice. It creates a stronger, more resilient join than machine stitching &mdash; and if a single stitch ever fails, the rest hold firm. It also allows the maker to feel the tension in each pull, adjusting for the natural variation in the leather.</p>
+        <p>The entire process &mdash; from hide selection to finished product &mdash; takes place in our Melbourne workshop. No outsourcing. No assembly line. One maker, one object, start to finish.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MATERIALS -->
+  <section id="materials">
+    <div class="materials-header fade-up">
+      <div class="section-tag">Materials</div>
+      <h2 class="section-title">What goes into an Origin</h2>
+    </div>
+    <div class="materials">
+      <div class="material-item fade-up">
+        <h4>Full-grain leather</h4>
+        <p>Selected for visible grain character and durability. Ages into a rich patina unique to each piece.</p>
+      </div>
+      <div class="material-item fade-up">
+        <h4>Contrast thread</h4>
+        <p>Hand-stitched with waxed polyester thread. Visible on Midnight and Slate colourways as a deliberate design detail.</p>
+      </div>
+      <div class="material-item fade-up">
+        <h4>Moulded internals</h4>
+        <p>Precision-formed pocket structure &mdash; not just stitched leather, but an engineered carry system.</p>
+      </div>
+      <div class="material-item fade-up">
+        <h4>Solid hardware</h4>
+        <p>D-ring carry points in silver or gold finish. Built to take daily use without loosening or tarnishing.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOUNDER STORY -->
+  <section id="story" class="story-section">
+    <div class="story-grid">
+      <div class="story-text fade-up">
+        <div class="section-tag">The maker</div>
+        <h2 class="section-title">Curiosity about what a material could become</h2>
+        <p>The Tarrant Collective was founded by a designer and maker whose relationship with materials began long before any formal training. As a child, she was deeply tactile &mdash; often found rolling a stone in her hand, making umbrellas out of ferns, pressing bark into sheets not yet knowing why. Only that it had to be tried.</p>
+        <p>That bark did not make fabric. But it made the base for paint. Failure, it turned out, was just the beginning of something else.</p>
+        <p>Self-taught across painting, moulding and leatherwork, everything made under the Tarrant name starts the same way: with curiosity about what a material could become in the hands.</p>
+        <p>The name Tarrant carries a family lineage. It is chosen carefully, because everything here is.</p>
+      </div>
+      <div class="story-image fade-up">
+        <img src="https://images.unsplash.com/photo-1452587925148-ce544e77e70d?w=800&q=80"
+             alt="The maker at work" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- USE CASES -->
+  <section class="usecases-section">
+    <div class="usecases-header fade-up">
+      <div class="section-tag">For</div>
+      <h2 class="section-title">The intentional person</h2>
+      <p>The Tarrant customer is not defined by age or profession &mdash; they are defined by sensibility. They buy with intention. They notice when something is well made. They would rather own one right thing than three adequate things.</p>
+    </div>
+    <div class="usecases-grid">
+      <div class="usecase fade-up">
+        <h4>Daily commute</h4>
+        <p>Everything in place, nothing to rummage for</p>
+      </div>
+      <div class="usecase fade-up">
+        <h4>Client meetings</h4>
+        <p>Professional presence without a bulky briefcase</p>
+      </div>
+      <div class="usecase fade-up">
+        <h4>Design on the run</h4>
+        <p>Flip it open as a working surface anywhere</p>
+      </div>
+      <div class="usecase fade-up">
+        <h4>Business travel</h4>
+        <p>Laptop, charger, passport &mdash; all accounted for</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER / WAITLIST -->
+  <section class="waitlist-section">
+    <div class="waitlist-content fade-up">
+      <h2 class="section-title">Be the first to know</h2>
+      <p>Production is underway. Join the list for early access, behind-the-scenes updates, and first availability when The Origin launches.</p>
+      <form class="waitlist-form" onsubmit="handleWaitlist(event)">
+        <input type="email" placeholder="Email address" required>
+        <button type="submit" class="btn btn-waitlist">Join the waitlist</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <div class="contact-grid">
+      <div class="contact-text fade-up">
+        <div class="section-tag">Get in touch</div>
+        <h2 class="section-title">Let's talk</h2>
+        <p>Whether you're after your first Origin, interested in wholesale, corporate gifting, or custom orders &mdash; we'd love to hear from you.</p>
+        <div class="contact-detail">
+          <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          hello@thetarrantcollective.com
+        </div>
+        <div class="contact-detail">
+          <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Melbourne, Australia
+        </div>
+      </div>
+      <form class="fade-up" onsubmit="handleSubmit(event)">
+        <div class="form-row">
+          <input type="text" placeholder="First name" required>
+          <input type="text" placeholder="Last name" required>
+        </div>
+        <input type="email" placeholder="Email address" required>
+        <select>
+          <option value="" disabled selected>I'm interested in...</option>
+          <option>Buying an Origin</option>
+          <option>Wholesale enquiry</option>
+          <option>Corporate gifting</option>
+          <option>Custom order</option>
+          <option>Something else</option>
+        </select>
+        <textarea placeholder="Your message..."></textarea>
+        <button type="submit" class="btn btn-submit">Send message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="logo">The Tarrant <span>Collective</span></div>
+        <p>Designed and made in Melbourne.</p>
+      </div>
+      <div class="footer-links-grid">
+        <div>
+          <h4>Shop</h4>
+          <ul class="footer-links">
+            <li><a href="#product">The Origin</a></li>
+            <li><a href="#colourways">Colourways</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>About</h4>
+          <ul class="footer-links">
+            <li><a href="#story">Our story</a></li>
+            <li><a href="#craft">Craftsmanship</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Support</h4>
+          <ul class="footer-links">
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#">Shipping</a></li>
+            <li><a href="#">Returns</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 The Tarrant Collective. All rights reserved.</p>
+      <ul class="footer-legal">
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Instagram</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

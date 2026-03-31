@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en" data-palette="a" data-images="on">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Tarrant Collective — Wireframe B</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="wireframe.css">
+</head>
+<body>
+
+  <!-- ── SIDEBAR NAVIGATION (Bonenfant-inspired) ── -->
+  <aside class="wf-sidebar">
+    <div class="wf-sidebar-logo">The Tarrant<br>Collective</div>
+    <div class="wf-sidebar-sub">Wireframe B</div>
+
+    <nav class="wf-sidebar-nav">
+      <button class="wf-sidebar-link active" data-page="page-home">Home</button>
+      <button class="wf-sidebar-link" data-page="page-shop">The Origin</button>
+      <button class="wf-sidebar-link" data-page="page-about">Story</button>
+      <button class="wf-sidebar-link" data-page="page-craft">Craftsmanship</button>
+      <button class="wf-sidebar-link" data-page="page-contact">Contact</button>
+    </nav>
+
+    <div class="wf-sidebar-footer">
+      <div class="wf-toggle">
+        <span class="wf-toggle-label">Palette</span>
+        <div class="wf-toggle-switch">
+          <button class="wf-toggle-btn active" id="palette-a">A Dark</button>
+          <button class="wf-toggle-btn" id="palette-b">B Light</button>
+        </div>
+      </div>
+      <div class="wf-toggle" style="margin-top: 0.75rem;">
+        <span class="wf-toggle-label">Images</span>
+        <div class="wf-toggle-switch">
+          <button class="wf-toggle-btn active" id="images-on">On</button>
+          <button class="wf-toggle-btn" id="images-off">Off</button>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ── MAIN CONTENT ── -->
+  <div class="wf-content">
+
+    <!-- ════════════════════════════════════════ -->
+    <!-- HOME PAGE                                -->
+    <!-- ════════════════════════════════════════ -->
+    <main id="page-home" class="wf-page active">
+
+      <!-- Hero — full-bleed with floating product card (Polene-inspired) -->
+      <div class="wf-section wf-section--hero wf-section--block-1" data-section="Hero Section">
+        <div class="wf-hero-bg" style="background: url('./img/three-colourways-closed.png') center/cover no-repeat;">
+        </div>
+        <div class="wf-floating-card wf-stack wf-stack--sm">
+          <p class="wf-tagline">New</p>
+          <h2 class="wf-heading wf-heading--md">The Tarrant — Origin</h2>
+          <p class="wf-body" style="font-size: 0.85rem;">Hand-stitched leather carry organiser.<br>Three colourways. One purpose.</p>
+          <p style="color: var(--wf-accent); font-size: 0.95rem; margin-top: 0.25rem;">From $599 AUD</p>
+          <span class="wf-link" style="margin-top: 0.5rem;">Discover</span>
+        </div>
+        <span class="wf-section-hint">Click to comment</span>
+      </div>
+
+      <!-- Brand statement — Aesop-style coloured block -->
+      <div class="wf-section wf-section--block-3" data-section="Brand Statement" style="padding: 6rem 4rem;">
+        <div class="wf-contain" style="margin: 0 auto; text-align: center;">
+          <p class="wf-tagline" style="margin-bottom: 1.5rem;">The Tarrant Collective</p>
+          <h2 class="wf-heading wf-heading--xl" style="margin-bottom: 1.5rem;">A new kind of<br>everyday essential.</h2>
+          <p class="wf-body" style="max-width: 500px; margin: 0 auto;">Slim, deliberate, and precisely engineered. It holds every essential a modern professional carries, and turns over to become a flat working surface.</p>
+        </div>
+        <span class="wf-section-hint">Click to comment</span>
+      </div>
+
+      <!-- Mosaic product grid (Polene-inspired) -->
+      <div class="wf-section wf-section--block-2" data-section="Product Mosaic">
+        <div class="wf-label">Product Mosaic</div>
+        <div class="wf-mosaic">
+          <div class="wf-mosaic-large">
+            <div class="wf-img-placeholder wf-img--portrait" style="height: 100%;">
+              <img src="./img/buckle-closeup.png" alt="Cognac buckle — hero portrait">
+            </div>
+          </div>
+          <div class="wf-stack" style="gap: 1rem;">
+            <div class="wf-img-placeholder wf-img--square">
+              <img src="./img/midnight-folio-standing.png" alt="Midnight — standing">
+            </div>
+            <div class="wf-img-placeholder wf-img--square">
+              <img src="./img/natural-open-folio.png" alt="Natural — grain close-up">
+            </div>
+          </div>
+        </div>
+        <span class="wf-section-hint">Click to comment</span>
+      </div>
+
+      <!-- Features — asymmetric layout (Bonenfant 50/50 alternating) -->
+      <div class="wf-section wf-section--block-4" data-section="Feature: Carry System">
+        <div class="wf-grid-asym">
+          <div class="wf-img-placeholder wf-img--portrait">
+            <img src="./img/natural-open-folio.png" alt="Internal pocket grid — the converting shot">
+          </div>
+          <div class="wf-stack wf-stack--lg">
+            <p class="wf-tagline">01 — Engineered</p>
+            <h2 class="wf-heading wf-heading--lg">Moulded pocket<br>architecture.</h2>
+            <p class="wf-body">Not just stitched leather. A precision-engineered carry system that holds laptop, stylus, phone, AirPods, charger, keys, and glasses.</p>
+            <span class="wf-link">See what fits</span>
+          </div>
+        </div>
+        <span class="wf-section-hint">Click to comment</span>
+      </div>
+
+      <div class="wf-section wf-section--block-5" data-section="Feature: Work Surface">
+        <div class="wf-grid-asym wf-grid-asym--reverse">
+          <div class="wf-stack wf-stack--lg">
+            <p class="wf-tagline">02 — Dual purpose</p>
+            <h2 class="wf-heading wf-heading--lg">Carry organiser.<br>Work surface.</h2>
+            <p class="wf-body">Turns over to become a flat working surface. One object, two modes. Designed for the intentional professional.</p>
+            <span class="wf-link">See the reversal</span>
+          </div>
+          <div class="wf-img-placeholder wf-img--portrait">
+            <img src="./img/three-colourways-open.png" alt="The reversal — flat work surface">
+          </div>
+        </div>
+        <span class="wf-section-hint">Click to comment</span>
+      </div>
+
+      <div class="wf-section wf-section--block-3" data-section="Feature: Hand-Stitched">
+        <div class="wf-grid-asym">
+          <div class="wf-img-placeholder wf-img--landscape">
+            <img src="./img/stitching-detail.png" alt="Contrast stitching close-up">
+          </div>
+          <div class="wf-stack wf-stack--lg">
+            <p class="wf-tagline">03 — By hand</p>
+            <h2 class="wf-heading wf-heading--lg">Every stitch<br>placed by hand.</h2>
+            <p class="wf-body">Full-grain leather construction. Contrast thread detail on darker colourways. No machines. No shortcuts.</p>
+            <span class="wf-link">Our process</span>
+          </div>
+        </div>
+        <span class="wf-section-hint">Click to comment</span>
+      </div>
+
+      <!-- Testimonials — editorial quote blocks -->
+      <div class="wf-section wf-section--block-1" data-section="Testimonials" style="padding: 6rem 4rem;">
+        <div class="wf-contain--wide" style="margin: 0 auto;">
+          <div class="wf-label wf-center">Testimonials</div>
+          <div class="wf-grid-3">
+            <div class="wf-stack" style="padding: 2rem 0; border-top: 1px solid var(--wf-border);">
+              <p class="wf-heading" style="font-size: 2rem; color: var(--wf-accent); line-height: 1;">&ldquo;</p>
+              <p class="wf-body" style="font-style: italic; font-size: 0.9rem;">Customer review placeholder. Real testimonial to be provided.</p>
+              <p style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--wf-text-muted); margin-top: 0.5rem;">— Customer Name</p>
+            </div>
+            <div class="wf-stack" style="padding: 2rem 0; border-top: 1px solid var(--wf-border);">
+              <p class="wf-heading" style="font-size: 2rem; color: var(--wf-accent); line-height: 1;">&ldquo;</p>
+              <p class="wf-body" style="font-style: italic; font-size: 0.9rem;">Customer review placeholder. Real testimonial to be provided.</p>
+              <p style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--wf-text-muted); margin-top: 0.5rem;">— Customer Name</p>
+            </div>
+            <div class="wf-stack" style="padding: 2rem 0; border-top: 1px solid var(--wf-border);">
+              <p class="wf-heading" style="font-size: 2rem; color: var(--wf-accent); line-height: 1;">&ldquo;</p>
+              <p class="wf-body" style="font-style: italic; font-size: 0.9rem;">Customer review placeholder. Real testimonial to be provided.</p>
+              <p style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--wf-text-muted); margin-top: 0.5rem;">— Customer Name</p>
+            </div>
+          </div>
+        </div>
+        <span class="wf-section-hint">Click to comment</span>
+      </div>
+
+      <!-- Email Capture — coloured block -->
+      <div class="wf-section wf-section--block-4" data-section="Email Capture / Waitlist" style="padding: 6rem 4rem;">
+        <div class="wf-contain" style="margin: 0 auto; text-align: center;">
+          <p class="wf-tagline" style="margin-bottom: 1rem;">Join the waitlist</p>
+          <h2 class="wf-heading wf-heading--lg" style="margin-bottom: 1rem;">Be the first to know.</h2>
+          <p class="wf-body" style="margin-bottom: 2rem;">Early access. Launch updates. No noise.</p>
+          <div>
+            <span class="wf-input" style="min-width: 260px;">your@email.com</span>
+            <span class="wf-btn wf-btn--filled" style="margin-left: 0.5rem;">Join</span>
+          </div>
+        </div>
+        <span class="wf-section-hint">Click to comment</span>
+      </div>
+
+      <!-- Footer -->
+      <div class="wf-section wf-section--block-2" data-section="Footer" style="padding: 4rem;">
+        <div class="wf-label">Footer</div>
+        <div class="wf-footer-grid">
+          <div class="wf-stack wf-stack--sm">
+            <span class="wf-heading wf-heading--sm">The Tarrant Collective</span>
+            <p class="wf-body" style="font-size: 0.8rem;">Hand-stitched leather goods.<br>Melbourne, Australia.</p>
+          </div>
+          <div class="wf-stack wf-stack--sm">
+            <div class="wf-footer-heading">Shop</div>
+            <div class="wf-footer-link">The Origin</div>
+            <div class="wf-footer-link">Midnight</div>
+            <div class="wf-footer-link">Slate</div>
+            <div class="wf-footer-link">Natural</div>
+          </div>
+          <div class="wf-stack wf-stack--sm">
+            <div class="wf-footer-heading">About</div>
+            <div class="wf-footer-link">Our Story</div>
+            <div class="wf-footer-link">Craftsmanship</div>
+            <div class="wf-footer-link">Contact</div>
+          </div>
+          <div class="wf-stack wf-stack--sm">
+            <div class="wf-footer-heading">Support</div>
+            <div class="wf-footer-link">Shipping</div>
+            <div class="wf-footer-link">Returns</div>
+            <div class="wf-footer-link">FAQ</div>
+          </div>
+        </div>
+        <div class="wf-footer-legal">
+          <span>&copy; 2026 The Tarrant Collective. All rights reserved.</span>
+          <span>Privacy &nbsp;&middot;&nbsp; Terms &nbsp;&middot;&nbsp; Cookies</span>
+        </div>
+        <span class="wf-section-hint">Click to comment</span>
+      </div>
+
+    </main>
+
+    <!-- ════════════════════════════════════════ -->
+    <!-- SHOP / THE ORIGIN PAGE                   -->
+    <!-- ════════════════════════════════════════ -->
+    <main id="page-shop" class="wf-page">
+
+      <!-- Product hero — immersive (Polene collection teaser style) -->
+      <div class="wf-section wf-section--hero wf-section--block-3" data-section="Shop - Hero">
+        <div class="wf-hero-bg" style="background: url('./img/three-colourways-closed.png') center/cover no-repeat;">
+        </div>
+        <div class="wf-floating-card wf-stack wf-stack--sm">
+          <p class="wf-tagline">The Collection</p>
+          <h2 class="wf-heading wf-heading--md">The Tarrant — Origin</h2>
+          <p class="wf-body" style="font-size: 0.85rem;">One design. Three colourways.</p>
+        </div>
+        <span class="wf-section-hint">Click to comment</span>
+      </div>
+
+      <!-- Individual products — portrait cards (Polene-style) -->
+      <div class="wf-section wf-section--block-1" data-section="Shop - Midnight">
+        <div class="wf-grid-asym">
+          <div class="wf-img-placeholder wf-img--portrait">
+            <img src="./img/midnight-folio-flat.png" alt="Midnight — full product portrait">
+          </div>
+          <div class="wf-stack wf-stack--lg" style="padding: 2rem 0;">
+            <p class="wf-tagline">The Tarrant — Origin</p>
+            <h2 class="wf-heading wf-heading--xl">Midnight</h2>
+            <p class="wf-body">Deep rich black, silver hardware, contrast white stitching. The statement piece.</p>
+            <div class="wf-grid-2" style="gap: 1rem; max-width: 300px;">
+              <div class="wf-img-placeholder wf-img--square" style="max-height: 120px;">
+                <img src="./img/tech-folio-black.png" alt="Detail 1">
+              </div>
+              <div class="wf-img-placeholder wf-img--square" style="max-height: 120px;">
+                <img src="./img/buckle-closeup.png" alt="Detail 2">
+              </div>
+            </div>
+            <p class="wf-heading wf-heading--sm" style="color: var(--wf-accent); margin-top: 0.5rem;">$599 AUD</p>
+            <span class="wf-btn wf-btn--filled" style="align-self: flex-start;">Add to Cart</span>
+          </div>
+        </div>
+        <span class="wf-section-hint">Click to comment</span>
+      </div>
+
+      <div class="wf-section wf-section--block-4" data-section="Shop - Slate">
+        <div class="wf-grid-asym wf-grid-asym--reverse">
+          <div class="wf-stack wf-stack--lg" style="padding: 2rem 0;">
+            <p class="wf-tagline">The Tarrant — Origin</p>
+            <h2 class="wf-heading wf-heading--xl">Slate</h2>
+            <p class="wf-body">Complex cool charcoal, subtle and architectural. The quiet one.</p>
+            <div class="wf-grid-2" style="gap: 1rem; max-width: 300px;">
+              <div class="wf-img-placeholder wf-img--square" style="max-height: 120px;">
+                <img src="./img/buckle-closeup.png" alt="Detail 1">
+              </div>
+              <div class="wf-img-placeholder wf-img--square" style="max-height: 120px;">
+                <img src="./img/stitching-detail.png" alt="Detail 2">
+              </div>
+            </div>
+            <p class="wf-heading wf-heading--sm" style="color: var(--wf-accent); margin-top: 0.5rem;">$599 AUD</p>
+            <span class="wf-btn wf-btn--filled" style="align-self: flex-start;">Add to Cart</span>
+          </div>
+          <div class="wf-img-placeholder wf-img--portrait">
+            <img src="./img/charcoal-wallet.png" alt="Slate — full product portrait">
+          </div>
+        </div>
+        <span class="wf-section-hint">Click to comment</span>
+      </div>
+
+      <div class="wf-section wf-section--block-5" data-section="Shop - Natural">
+        <div class="wf-grid-asym">
+          <div class="wf-img-placeholder wf-img--portrait">
+            <img src="./img/natural-open-folio.png" alt="Natural — full product portrait">
+          </div>
+          <div class="wf-stack wf-stack--lg" style="padding: 2rem 0;">
+            <p class="wf-tagline">The Tarrant — Origin</p>
+            <h2 class="wf-heading wf-heading--xl">Natural</h2>
+            <p class="wf-body">Raw pale leather, gold hardware, extraordinary visible grain. The original.</p>
+            <div class="wf-grid-2" style="gap: 1rem; max-width: 300px;">
+              <div class="wf-img-placeholder wf-img--square" style="max-height: 120px;">
+                <img src="./img/buckle-closeup.png" alt="Detail 1">
+              </div>
+              <div class="wf-img-placeholder wf-img--square" style="max-height: 120px;">
+                <img src="./img/stitching-detail.png" alt="Detail 2">
+              </div>
+            </div>
+            <p class="wf-heading wf-heading--sm" style="color: var(--wf-accent); margin-top: 0.5rem;">$599 AUD</p>
+            <span class="wf-btn wf-btn--filled" style="align-self: flex-start;">Add to Cart</span>
+          </div>
+        </div>
+        <span class="wf-section-hint">Click to comment</span>
+      </div>
+
+    </main>
+
+    <!-- ════════════════════════════════════════ -->
+    <!-- ABOUT / STORY PAGE                       -->
+    <!-- ════════════════════════════════════════ -->
+    <main id="page-about" class="wf-page">
+
+      <!-- Story hero — editorial -->
+      <div class="wf-section wf-section--block-3" data-section="Story - Hero" style="padding: 8rem 4rem; text-align: center;">
+        <div class="wf-contain" style="margin: 0 auto;">
+          <p class="wf-tagline" style="margin-bottom: 2rem;">Our Story</p>
+          <h1 class="wf-heading wf-heading--display">The name Tarrant<br>carries lineage.</h1>
+          <p class="wf-body" style="max-width: 480px; margin: 2rem auto 0; font-size: 1rem;">Everything here is chosen carefully, because everything here is.</p>
+        </div>
+        <span class="wf-section-hint">Click to comment</span>
+      </div>
+
+      <!-- Brand story — alternating coloured blocks -->
+      <div class="wf-section wf-section--block-4" data-section="Story - Childhood">
+        <div class="wf-grid-asym">
+          <div class="wf-img-placeholder wf-img--portrait">
+            <img src="./img/craftsman-workshop.png" alt="Founder — atmospheric portrait">
+          </div>
+          <div class="wf-stack wf-stack--lg">
+            <h2 class="wf-heading wf-heading--lg">It started with a<br>stone in her hand.</h2>
+            <p class="wf-body">As a child, she was deeply tactile — often found rolling a stone in her hand, making umbrellas out of ferns, pressing bark into sheets not yet knowing why — only that it had to be tried.</p>
+            <p class="wf-body">That bark did not make fabric. But it made the base for paint. Failure, it turned out, was just the beginning of something else.</p>
+          </div>
+        </div>
+        <span class="wf-section-hint">Click to comment</span>
+      </div>
+
+      <div class="wf-section wf-section--block-5" data-section="Story - Self-Taught">
+        <div class="wf-grid-asym wf-grid-asym--reverse">
+          <div class="wf-stack wf-stack--lg">
+            <h2 class="wf-heading wf-heading--lg">Self-taught.<br>Material-led.</h2>
+            <p class="wf-body">Self-taught across painting, moulding and leatherwork, everything made under the Tarrant name starts the same way: with curiosity about what a material could become in the hands.</p>
+          </div>
+          <div class="wf-img-placeholder wf-img--portrait">
+            <img src="./img/stitching-detail.png" alt="Hands working leather">
+          </div>
+        </div>
+        <span class="wf-section-hint">Click to comment</span>
+      </div>
+
+      <!-- Values — Aesop-style coloured block -->
+      <div class="wf-section wf-section--block-3" data-section="Story - Values" style="padding: 6rem 4rem;">
+        <div class="wf-contain--wide" style="margin: 0 auto;">
+          <div class="wf-center" style="margin-bottom: 3rem;">
+            <p class="wf-tagline" style="margin-bottom: 1rem;">Our Values</p>
+            <h2 class="wf-heading wf-heading--lg">What we stand for.</h2>
+          </div>
+          <div class="wf-grid-3" style="gap: 0;">
+            <div style="padding: 1.5rem; border-right: 1px solid var(--wf-border); border-bottom: 1px solid var(--wf-border); text-align: center;">
+              <p class="wf-heading" style="font-size: 0.95rem;">Craftsmanship</p>
+            </div>
+            <div style="padding: 1.5rem; border-right: 1px solid var(--wf-border); border-bottom: 1px solid var(--wf-border); text-align: center;">
+              <p class="wf-heading" style="font-size: 0.95rem;">Quality over Quantity</p>
+            </div>
+            <div style="padding: 1.5rem; border-bottom: 1px solid var(--wf-border); text-align: center;">
+              <p class="wf-heading" style="font-size: 0.95rem;">Timeless Design</p>
+            </div>
+            <div style="padding: 1.5rem; border-right: 1px solid var(--wf-border); text-align: center;">
+              <p class="wf-heading" style="font-size: 0.95rem;">Heritage Materials</p>
+            </div>
+            <div style="padding: 1.5rem; border-right: 1px solid var(--wf-border); text-align: center;">
+              <p class="wf-heading" style="font-size: 0.95rem;">Modern Function</p>
+            </div>
+            <div style="padding: 1.5rem; text-align: center;">
+              <p class="wf-heading" style="font-size: 0.95rem;">Attention to Detail</p>
+            </div>
+          </div>
+        </div>
+        <span class="wf-section-hint">Click to comment</span>
+      </div>
+
+    </main>
+
+    <!-- ════════════════════════════════════════ -->
+    <!-- CRAFTSMANSHIP PAGE                       -->
+    <!-- ════════════════════════════════════════ -->
+    <main id="page-craft" class="wf-page">
+
+      <!-- Craftsmanship hero — cinematic -->
+      <div class="wf-section wf-section--hero wf-section--block-4" data-section="Craftsmanship - Hero">
+        <div class="wf-hero-bg" style="background: url('./img/craftsman-workshop.png') center/cover no-repeat;">
+        </div>
+        <div class="wf-floating-card wf-stack wf-stack--sm">
+          <p class="wf-tagline">Process</p>
+          <h2 class="wf-heading wf-heading--md">Made by hand.<br>Made to last.</h2>
+        </div>
+        <span class="wf-section-hint">Click to comment</span>
+      </div>
+
+      <!-- Process steps — alternating blocks -->
+      <div class="wf-section wf-section--block-5" data-section="Process - Material Selection">
+        <div class="wf-grid-asym">
+          <div class="wf-img-placeholder wf-img--landscape">
+            <img src="./img/stitching-detail.png" alt="Leather hides — material selection">
+          </div>
+          <div class="wf-stack wf-stack--lg">
+            <p class="wf-tagline">01</p>
+            <h2 class="wf-heading wf-heading--lg">Material<br>Selection</h2>
+            <p class="wf-body">Full-grain leather chosen for character and durability. Each hide is unique — selected by hand for grain, weight, and feel.</p>
+          </div>
+        </div>
+        <span class="wf-section-hint">Click to comment</span>
+      </div>
+
+      <div class="wf-section wf-section--block-3" data-section="Process - Moulding">
+        <div class="wf-grid-asym wf-grid-asym--reverse">
+          <div class="wf-stack wf-stack--lg">
+            <p class="wf-tagline">02</p>
+            <h2 class="wf-heading wf-heading--lg">Moulding &<br>Shaping</h2>
+            <p class="wf-body">The internal pocket system is precision-moulded — engineered, not just stitched. Each compartment shaped to hold a specific object.</p>
+          </div>
+          <div class="wf-img-placeholder wf-img--landscape">
+            <img src="./img/natural-open-folio.png" alt="Moulding process — hands shaping leather">
+          </div>
+        </div>
+        <span class="wf-section-hint">Click to comment</span>
+      </div>
+
+      <div class="wf-section wf-section--block-4" data-section="Process - Stitching">
+        <div class="wf-grid-asym">
+          <div class="wf-img-placeholder wf-img--landscape">
+            <img src="./img/buckle-closeup.png" alt="Hand stitching — contrast thread">
+          </div>
+          <div class="wf-stack wf-stack--lg">
+            <p class="wf-tagline">03</p>
+            <h2 class="wf-heading wf-heading--lg">Hand<br>Stitching</h2>
+            <p class="wf-body">Every stitch placed by hand. Contrast thread on darker colourways for visible craft detail. No machines. No shortcuts.</p>
+          </div>
+        </div>
+        <span class="wf-section-hint">Click to comment</span>
+      </div>
+
+      <!-- Video — full-width block -->
+      <div class="wf-section wf-section--block-1" data-section="Craftsmanship - Video">
+        <div class="wf-label wf-center">Making Process Video</div>
+        <div class="wf-img-placeholder wf-img--landscape" style="max-width: 900px; margin: 0 auto;">
+          <img src="./img/craftsman-workshop.png" alt="Behind the scenes — making process film">
+        </div>
+        <p class="wf-body wf-center" style="max-width: 500px; margin: 2rem auto 0;">The making story is central to the brand. A short film showing hand-stitching, moulding, and material selection.</p>
+        <span class="wf-section-hint">Click to comment</span>
+      </div>
+
+    </main>
+
+    <!-- ════════════════════════════════════════ -->
+    <!-- CONTACT PAGE                             -->
+    <!-- ════════════════════════════════════════ -->
+    <main id="page-contact" class="wf-page">
+
+      <div class="wf-section wf-section--block-3" data-section="Contact - Hero" style="padding: 8rem 4rem; text-align: center;">
+        <div class="wf-contain" style="margin: 0 auto;">
+          <p class="wf-tagline" style="margin-bottom: 2rem;">Get in touch</p>
+          <h1 class="wf-heading wf-heading--display">Contact</h1>
+          <p class="wf-body" style="margin-top: 1.5rem;">contact@thetarrantcollective.com</p>
+        </div>
+        <span class="wf-section-hint">Click to comment</span>
+      </div>
+
+      <div class="wf-section wf-section--block-1" data-section="Contact - Form">
+        <div class="wf-label">Contact Form</div>
+        <div class="wf-stack" style="max-width: 480px; margin: 0 auto;">
+          <div class="wf-grid-2" style="gap: 1rem;">
+            <span class="wf-input" style="min-width: auto; width: 100%;">First name</span>
+            <span class="wf-input" style="min-width: auto; width: 100%;">Last name</span>
+          </div>
+          <span class="wf-input" style="width: 100%;">Email address</span>
+          <span class="wf-input" style="width: 100%; min-height: 140px; display: block;">Your message</span>
+          <div>
+            <span class="wf-btn wf-btn--filled">Send Message</span>
+          </div>
+        </div>
+        <span class="wf-section-hint">Click to comment</span>
+      </div>
+
+    </main>
+
+  </div><!-- end .wf-content -->
+
+  <!-- ════════════════════════════════════════ -->
+  <!-- COMMENT MODAL                            -->
+  <!-- ════════════════════════════════════════ -->
+  <div class="wf-modal" id="comment-modal">
+    <div class="wf-modal-content">
+      <button class="wf-modal-close">&times;</button>
+      <h3>Comment on: <span id="modal-section-name"></span></h3>
+
+      <div class="wf-modal-fields">
+        <form name="wireframe-b-feedback" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="wireframe-b-feedback">
+          <input type="hidden" name="section" id="form-section">
+          <input type="hidden" name="palette" id="form-palette">
+          <p style="display:none;"><input name="bot-field"></p>
+          <input type="text" name="name" placeholder="Your name (optional)">
+          <textarea name="comment" placeholder="Your feedback on this section..." required></textarea>
+          <button type="submit">Submit Comment</button>
+        </form>
+      </div>
+
+      <div class="wf-modal-success">
+        <p>Thank you!</p>
+        <small>Your feedback has been submitted.</small>
+      </div>
+    </div>
+  </div>
+
+  <script src="wireframe.js"></script>
+</body>
+</html>
