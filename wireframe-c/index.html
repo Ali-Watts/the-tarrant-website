@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en" data-palette="a" data-images="on">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Tarrant Collective — Wireframe C</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ── NAVIGATION ── -->
+  <nav class="nav">
+    <div class="nav-logo">The Tarrant Collective <span style="display: block; font-family: 'Jost', sans-serif; font-size: 0.55rem; font-weight: 300; text-transform: uppercase; letter-spacing: 0.2em; color: var(--text-muted); margin-top: 0.15rem;">Wireframe C</span></div>
+    <div class="nav-links">
+      <button class="nav-link active" data-page="home">Home</button>
+      <button class="nav-link" data-page="shop">The Origin</button>
+      <button class="nav-link" data-page="about">Story</button>
+      <button class="nav-link" data-page="craft">Craftsmanship</button>
+      <button class="nav-link" data-page="contact">Contact</button>
+    </div>
+    <div class="nav-right">
+      <div class="palette-toggle">
+        <span class="palette-toggle-label">Palette</span>
+        <div class="palette-switch">
+          <button class="palette-btn active" id="pal-a">A</button>
+          <button class="palette-btn" id="pal-b">B</button>
+        </div>
+      </div>
+      <div class="palette-toggle">
+        <span class="palette-toggle-label">Images</span>
+        <div class="palette-switch">
+          <button class="palette-btn active" id="img-on">On</button>
+          <button class="palette-btn" id="img-off">Off</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ════════════════════════════════════════════ -->
+  <!-- HOME                                         -->
+  <!-- ════════════════════════════════════════════ -->
+  <div id="home" class="page active">
+
+    <!-- Hero -->
+    <section class="section hero" data-section="Hero Section">
+      <div class="hero-bg" style="background: url('./img/three-colourways-closed.png') center/cover no-repeat; opacity: 0.3;"></div>
+      <div class="hero-content" style="grid-template-columns: 1fr; max-width: 700px;">
+        <div class="hero-text">
+          <p class="overline reveal">Hand-stitched leather</p>
+          <h1 class="heading-display reveal reveal-delay-1">A new kind of<br>everyday essential.</h1>
+          <p class="body-text body-text--large reveal reveal-delay-2" style="max-width: 420px;">Every device. One slim object. Three colourways. Made for the intentional person who carries with purpose.</p>
+          <div class="reveal reveal-delay-3" style="display: flex; gap: 1.5rem; align-items: center; margin-top: 0.5rem;">
+            <span class="btn btn--filled">Shop The Origin <span class="btn-arrow"></span></span>
+          </div>
+        </div>
+      </div>
+      <span class="section-label">Hero Section</span>
+    </section>
+
+    <!-- Brand Statement -->
+    <section class="section bg-warm section-pad--lg" data-section="Brand Statement">
+      <div class="container container--narrow center">
+        <div class="divider divider--center reveal" style="margin-bottom: 2rem;"></div>
+        <p class="overline reveal" style="margin-bottom: 1.5rem;">The Tarrant Collective</p>
+        <h2 class="heading-xl reveal reveal-delay-1">Not a bag. Not a case.<br>A new category.</h2>
+        <p class="body-text reveal reveal-delay-2" style="margin-top: 1.5rem;">Slim, deliberate, and precisely engineered. The Tarrant — Origin holds every essential a modern professional carries, and turns over to become a flat working surface. Made for those who would rather own one right thing than three adequate things.</p>
+      </div>
+      <span class="section-label">Brand Statement</span>
+    </section>
+
+    <!-- Product Mosaic -->
+    <section class="section bg-secondary section-pad" data-section="Product Mosaic">
+      <div class="container container--wide">
+        <div class="mosaic reveal">
+          <div class="mosaic-hero">
+            <div class="img-frame" style="height: 100%;">
+              <img src="./img/buckle-closeup.png" alt="Cognac buckle — editorial portrait">
+            </div>
+          </div>
+          <div class="img-frame img-square">
+            <img src="./img/midnight-folio-standing.png" alt="Midnight — standing">
+          </div>
+          <div class="img-frame img-square">
+            <img src="./img/natural-open-folio.png" alt="Natural — leather grain">
+          </div>
+        </div>
+      </div>
+      <span class="section-label">Product Mosaic</span>
+    </section>
+
+    <!-- Features -->
+    <section class="section bg-accent section-pad--lg" data-section="Features">
+      <div class="container">
+        <div class="center reveal" style="margin-bottom: 4rem;">
+          <p class="overline" style="margin-bottom: 1rem;">Engineered for purpose</p>
+          <h2 class="heading-xl">Every detail considered.</h2>
+        </div>
+        <div class="grid-3">
+          <div class="stack stack--md reveal reveal-delay-1" style="padding: 2rem 0; border-top: 1px solid var(--border);">
+            <span class="feature-number">01</span>
+            <h3 class="heading-sm">Full-Grain Leather</h3>
+            <p class="body-text">Hand-stitched with contrast thread detail on darker colourways. Heritage material, modern precision.</p>
+          </div>
+          <div class="stack stack--md reveal reveal-delay-2" style="padding: 2rem 0; border-top: 1px solid var(--border);">
+            <span class="feature-number">02</span>
+            <h3 class="heading-sm">Moulded Pockets</h3>
+            <p class="body-text">A precision-engineered carry system. Each compartment shaped for a specific object. Not just stitched leather.</p>
+          </div>
+          <div class="stack stack--md reveal reveal-delay-3" style="padding: 2rem 0; border-top: 1px solid var(--border);">
+            <span class="feature-number">03</span>
+            <h3 class="heading-sm">Dual Purpose</h3>
+            <p class="body-text">Carry organiser. Work surface. One object, two modes. Flips over to become a flat, considered workspace.</p>
+          </div>
+          <div class="stack stack--md reveal reveal-delay-1" style="padding: 2rem 0; border-top: 1px solid var(--border);">
+            <span class="feature-number">04</span>
+            <h3 class="heading-sm">D-Ring Hardware</h3>
+            <p class="body-text">Carry strap attachment for on-the-move use. Confirms this travels — from desk to meeting to city.</p>
+          </div>
+          <div class="stack stack--md reveal reveal-delay-2" style="padding: 2rem 0; border-top: 1px solid var(--border);">
+            <span class="feature-number">05</span>
+            <h3 class="heading-sm">Slim Profile</h3>
+            <p class="body-text">Architectural lines. Looks like it holds nothing but holds everything. The opposite of bulk.</p>
+          </div>
+          <div class="stack stack--md reveal reveal-delay-3" style="padding: 2rem 0; border-top: 1px solid var(--border);">
+            <span class="feature-number">06</span>
+            <h3 class="heading-sm">Holds Everything</h3>
+            <p class="body-text">Laptop, stylus, phone, AirPods, charger, keys, glasses. One pocket system. Zero compromises.</p>
+          </div>
+        </div>
+      </div>
+      <span class="section-label">Features</span>
+    </section>
+
+    <!-- Craftsmanship Preview -->
+    <section class="section bg-warm section-pad" data-section="Craftsmanship Preview">
+      <div class="container">
+        <div class="grid-asym">
+          <div class="img-frame img-portrait reveal">
+            <img src="./img/craftsman-workshop.png" alt="Making process — hands at work">
+          </div>
+          <div class="stack stack--lg reveal reveal-delay-2">
+            <p class="overline">Made by hand</p>
+            <h2 class="heading-lg">The making is<br>the meaning.</h2>
+            <p class="body-text">Self-taught across painting, moulding and leatherwork, everything made under the Tarrant name starts the same way: with curiosity about what a material could become in the hands.</p>
+            <span class="text-link">Our process <span class="btn-arrow" style="width: 14px;"></span></span>
+          </div>
+        </div>
+      </div>
+      <span class="section-label">Craftsmanship Preview</span>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section bg-deep section-pad" data-section="Testimonials">
+      <div class="container">
+        <div class="center reveal" style="margin-bottom: 3rem;">
+          <p class="overline" style="margin-bottom: 1rem;">Words</p>
+          <h2 class="heading-lg">What people are saying.</h2>
+        </div>
+        <div class="grid-3">
+          <div class="testimonial reveal reveal-delay-1">
+            <p class="testimonial-quote">&ldquo;Customer review placeholder. Real testimonial to be provided by the client.&rdquo;</p>
+            <p class="testimonial-author">— Customer Name</p>
+          </div>
+          <div class="testimonial reveal reveal-delay-2">
+            <p class="testimonial-quote">&ldquo;Customer review placeholder. Real testimonial to be provided by the client.&rdquo;</p>
+            <p class="testimonial-author">— Customer Name</p>
+          </div>
+          <div class="testimonial reveal reveal-delay-3">
+            <p class="testimonial-quote">&ldquo;Customer review placeholder. Real testimonial to be provided by the client.&rdquo;</p>
+            <p class="testimonial-author">— Customer Name</p>
+          </div>
+        </div>
+      </div>
+      <span class="section-label">Testimonials</span>
+    </section>
+
+    <!-- Email Capture -->
+    <section class="section bg-accent section-pad--lg" data-section="Email Capture / Waitlist">
+      <div class="container container--narrow center">
+        <p class="overline reveal" style="margin-bottom: 1rem;">Join the waitlist</p>
+        <h2 class="heading-xl reveal reveal-delay-1">Be the first to know.</h2>
+        <p class="body-text reveal reveal-delay-2" style="margin: 1.25rem auto 2.5rem; max-width: 400px;">Early access. Launch updates. No noise.</p>
+        <div class="email-row reveal reveal-delay-3">
+          <span class="form-input" style="color: var(--text-muted);">your@email.com</span>
+          <span class="btn btn--filled">Join</span>
+        </div>
+      </div>
+      <span class="section-label">Email Capture</span>
+    </section>
+
+    <!-- Footer -->
+    <footer class="section footer" data-section="Footer">
+      <div class="footer-grid reveal">
+        <div class="stack stack--sm">
+          <span class="heading-sm" style="font-family: 'Playfair Display', serif;">The Tarrant Collective</span>
+          <p class="body-text" style="font-size: 0.82rem; margin-top: 0.5rem;">Hand-stitched leather goods.<br>Melbourne, Australia.</p>
+        </div>
+        <div>
+          <div class="footer-heading">Shop</div>
+          <span class="footer-link">The Origin</span>
+          <span class="footer-link">Midnight</span>
+          <span class="footer-link">Slate</span>
+          <span class="footer-link">Natural</span>
+        </div>
+        <div>
+          <div class="footer-heading">About</div>
+          <span class="footer-link">Our Story</span>
+          <span class="footer-link">Craftsmanship</span>
+          <span class="footer-link">Contact</span>
+        </div>
+        <div>
+          <div class="footer-heading">Support</div>
+          <span class="footer-link">Shipping</span>
+          <span class="footer-link">Returns &amp; Warranty</span>
+          <span class="footer-link">FAQ</span>
+        </div>
+      </div>
+      <div class="footer-legal">
+        <span>&copy; 2026 The Tarrant Collective. All rights reserved.</span>
+        <span>Privacy &nbsp;&middot;&nbsp; Terms &nbsp;&middot;&nbsp; Cookies</span>
+      </div>
+      <span class="section-label">Footer</span>
+    </footer>
+
+  </div>
+
+  <!-- ════════════════════════════════════════════ -->
+  <!-- SHOP / THE ORIGIN                            -->
+  <!-- ════════════════════════════════════════════ -->
+  <div id="shop" class="page">
+
+    <!-- Shop Hero -->
+    <section class="section hero" data-section="Shop - Hero" style="min-height: 70vh;">
+      <div class="hero-bg" style="background: url('./img/three-colourways-closed.png') center/cover no-repeat; opacity: 0.3;"></div>
+      <div class="hero-content" style="grid-template-columns: 1fr; text-align: center; justify-items: center;">
+        <div class="hero-text" style="align-items: center;">
+          <p class="overline reveal">The Collection</p>
+          <h1 class="heading-display reveal reveal-delay-1">The Tarrant — Origin</h1>
+          <p class="body-text body-text--large reveal reveal-delay-2">One design. Three colourways. Choose yours.</p>
+        </div>
+      </div>
+      <span class="section-label">Shop Hero</span>
+    </section>
+
+    <!-- Midnight -->
+    <section class="section bg-secondary section-pad" data-section="Shop - Midnight">
+      <div class="container">
+        <div class="grid-asym">
+          <div class="img-frame img-portrait reveal">
+            <img src="./img/midnight-folio-flat.png" alt="Midnight — full portrait">
+          </div>
+          <div class="stack stack--lg reveal reveal-delay-2">
+            <p class="overline">The Tarrant — Origin</p>
+            <h2 class="heading-xl">Midnight</h2>
+            <p class="body-text">Deep rich black, silver hardware, contrast white stitching. The statement piece. For those who lead with confidence.</p>
+            <div class="grid-2" style="gap: 1rem; max-width: 280px;">
+              <div class="img-frame img-square"><img src="./img/tech-folio-black.png" alt="Tech folio detail"></div>
+              <div class="img-frame img-square"><img src="./img/buckle-closeup.png" alt="Hardware"></div>
+            </div>
+            <p style="font-size: 1.1rem; color: var(--accent); margin-top: 0.5rem;">$599 AUD</p>
+            <span class="btn btn--filled" style="align-self: flex-start;">Add to Cart <span class="btn-arrow"></span></span>
+          </div>
+        </div>
+      </div>
+      <span class="section-label">Midnight</span>
+    </section>
+
+    <!-- Slate -->
+    <section class="section bg-warm section-pad" data-section="Shop - Slate">
+      <div class="container">
+        <div class="grid-asym grid-asym--reverse">
+          <div class="stack stack--lg reveal">
+            <p class="overline">The Tarrant — Origin</p>
+            <h2 class="heading-xl">Slate</h2>
+            <p class="body-text">Complex cool charcoal, subtle and architectural. The quiet one. For those who let the work speak.</p>
+            <div class="grid-2" style="gap: 1rem; max-width: 280px;">
+              <div class="img-frame img-square"><img src="./img/stitching-detail.png" alt="Surface texture"></div>
+              <div class="img-frame img-square"><img src="./img/buckle-closeup.png" alt="Edge detail"></div>
+            </div>
+            <p style="font-size: 1.1rem; color: var(--accent); margin-top: 0.5rem;">$599 AUD</p>
+            <span class="btn btn--filled" style="align-self: flex-start;">Add to Cart <span class="btn-arrow"></span></span>
+          </div>
+          <div class="img-frame img-portrait reveal reveal-delay-2">
+            <img src="./img/charcoal-wallet.png" alt="Slate — full portrait">
+          </div>
+        </div>
+      </div>
+      <span class="section-label">Slate</span>
+    </section>
+
+    <!-- Natural -->
+    <section class="section bg-accent section-pad" data-section="Shop - Natural">
+      <div class="container">
+        <div class="grid-asym">
+          <div class="img-frame img-portrait reveal">
+            <img src="./img/natural-open-folio.png" alt="Natural — full portrait">
+          </div>
+          <div class="stack stack--lg reveal reveal-delay-2">
+            <p class="overline">The Tarrant — Origin</p>
+            <h2 class="heading-xl">Natural</h2>
+            <p class="body-text">Raw pale leather, gold hardware, extraordinary visible grain. The original. For those who see beauty in what's unfinished.</p>
+            <div class="grid-2" style="gap: 1rem; max-width: 280px;">
+              <div class="img-frame img-square"><img src="./img/stitching-detail.png" alt="Grain close-up"></div>
+              <div class="img-frame img-square"><img src="./img/buckle-closeup.png" alt="Gold hardware"></div>
+            </div>
+            <p style="font-size: 1.1rem; color: var(--accent); margin-top: 0.5rem;">$599 AUD</p>
+            <span class="btn btn--filled" style="align-self: flex-start;">Add to Cart <span class="btn-arrow"></span></span>
+          </div>
+        </div>
+      </div>
+      <span class="section-label">Natural</span>
+    </section>
+
+  </div>
+
+  <!-- ════════════════════════════════════════════ -->
+  <!-- ABOUT / STORY                                -->
+  <!-- ════════════════════════════════════════════ -->
+  <div id="about" class="page">
+
+    <!-- Story Hero -->
+    <section class="section bg-warm section-pad--lg" data-section="Story - Hero" style="padding-top: 12rem;">
+      <div class="container container--narrow center">
+        <p class="overline reveal" style="margin-bottom: 2rem;">Our Story</p>
+        <h1 class="heading-display reveal reveal-delay-1">The name Tarrant<br>carries lineage.</h1>
+        <div class="divider divider--center reveal reveal-delay-2" style="margin-top: 2.5rem;"></div>
+        <p class="body-text body-text--large reveal reveal-delay-3" style="margin-top: 2rem;">It is chosen carefully, because everything here is.</p>
+      </div>
+      <span class="section-label">Story Hero</span>
+    </section>
+
+    <!-- Childhood -->
+    <section class="section bg-secondary section-pad" data-section="Story - Childhood">
+      <div class="container">
+        <div class="grid-asym">
+          <div class="img-frame img-portrait reveal">
+            <img src="./img/craftsman-workshop.png" alt="Founder — atmospheric portrait">
+          </div>
+          <div class="stack stack--lg reveal reveal-delay-2">
+            <h2 class="heading-lg">It started with a stone<br>in her hand.</h2>
+            <p class="body-text">As a child, she was deeply tactile — often found rolling a stone in her hand, making umbrellas out of ferns, pressing bark into sheets not yet knowing why — only that it had to be tried.</p>
+            <p class="body-text">That bark did not make fabric. But it made the base for paint. Failure, it turned out, was just the beginning of something else.</p>
+          </div>
+        </div>
+      </div>
+      <span class="section-label">Childhood</span>
+    </section>
+
+    <!-- Self-taught -->
+    <section class="section bg-accent section-pad" data-section="Story - Self-Taught">
+      <div class="container">
+        <div class="grid-asym grid-asym--reverse">
+          <div class="stack stack--lg reveal">
+            <h2 class="heading-lg">Self-taught.<br>Material-led.</h2>
+            <p class="body-text">Self-taught across painting, moulding and leatherwork, everything made under the Tarrant name starts the same way: with curiosity about what a material could become in the hands.</p>
+            <p class="body-text">The Tarrant Collective is a studio, not just a product. The site architecture allows for future products across different categories and materials — not limited to leather.</p>
+          </div>
+          <div class="img-frame img-portrait reveal reveal-delay-2">
+            <img src="./img/stitching-detail.png" alt="Hands working leather">
+          </div>
+        </div>
+      </div>
+      <span class="section-label">Self-Taught</span>
+    </section>
+
+    <!-- Values -->
+    <section class="section bg-deep section-pad" data-section="Story - Values">
+      <div class="container" style="max-width: 900px;">
+        <div class="center reveal" style="margin-bottom: 3.5rem;">
+          <p class="overline" style="margin-bottom: 1rem;">Our Values</p>
+          <h2 class="heading-lg">What we stand for.</h2>
+        </div>
+        <div class="values-grid reveal reveal-delay-1">
+          <div class="value-cell"><span class="value-title">Craftsmanship</span></div>
+          <div class="value-cell"><span class="value-title">Quality over Quantity</span></div>
+          <div class="value-cell"><span class="value-title">Timeless Design</span></div>
+          <div class="value-cell"><span class="value-title">Heritage Materials</span></div>
+          <div class="value-cell"><span class="value-title">Modern Function</span></div>
+          <div class="value-cell"><span class="value-title">Attention to Detail</span></div>
+        </div>
+      </div>
+      <span class="section-label">Values</span>
+    </section>
+
+  </div>
+
+  <!-- ════════════════════════════════════════════ -->
+  <!-- CRAFTSMANSHIP                                -->
+  <!-- ════════════════════════════════════════════ -->
+  <div id="craft" class="page">
+
+    <!-- Craft Hero -->
+    <section class="section hero" data-section="Craftsmanship - Hero" style="min-height: 70vh;">
+      <div class="hero-bg" style="background: url('./img/craftsman-workshop.png') center/cover no-repeat; opacity: 0.3;"></div>
+      <div class="hero-content" style="grid-template-columns: 1fr; text-align: center; justify-items: center;">
+        <div class="hero-text" style="align-items: center;">
+          <p class="overline reveal">Process</p>
+          <h1 class="heading-display reveal reveal-delay-1">Made by hand.<br>Made to last.</h1>
+          <p class="body-text reveal reveal-delay-2" style="max-width: 440px;">A short film showing hand-stitching, moulding, and material selection is central to the brand story.</p>
+        </div>
+      </div>
+      <span class="section-label">Craftsmanship Hero</span>
+    </section>
+
+    <!-- Process Steps -->
+    <section class="section bg-warm section-pad--lg" data-section="Process - Material Selection">
+      <div class="container">
+        <div class="grid-asym">
+          <div class="img-frame img-landscape reveal">
+            <img src="./img/stitching-detail.png" alt="Leather hides — material selection">
+          </div>
+          <div class="stack stack--lg reveal reveal-delay-2">
+            <div class="process-step" style="display: flex; align-items: baseline; gap: 1.5rem;">
+              <span class="process-number">01</span>
+              <div class="stack stack--md">
+                <h2 class="heading-lg">Material Selection</h2>
+                <p class="body-text">Full-grain leather chosen for character and durability. Each hide is unique — selected by hand for grain, weight, and feel.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span class="section-label">Material Selection</span>
+    </section>
+
+    <section class="section bg-accent section-pad--lg" data-section="Process - Moulding">
+      <div class="container">
+        <div class="grid-asym grid-asym--reverse">
+          <div class="stack stack--lg reveal">
+            <div class="process-step" style="display: flex; align-items: baseline; gap: 1.5rem;">
+              <span class="process-number">02</span>
+              <div class="stack stack--md">
+                <h2 class="heading-lg">Moulding &amp; Shaping</h2>
+                <p class="body-text">The internal pocket system is precision-moulded — engineered, not just stitched. Each compartment shaped to hold a specific object with intention.</p>
+              </div>
+            </div>
+          </div>
+          <div class="img-frame img-landscape reveal reveal-delay-2">
+            <img src="./img/natural-open-folio.png" alt="Moulding process — shaping leather">
+          </div>
+        </div>
+      </div>
+      <span class="section-label">Moulding</span>
+    </section>
+
+    <section class="section bg-secondary section-pad--lg" data-section="Process - Stitching">
+      <div class="container">
+        <div class="grid-asym">
+          <div class="img-frame img-landscape reveal">
+            <img src="./img/buckle-closeup.png" alt="Hand stitching — contrast thread">
+          </div>
+          <div class="stack stack--lg reveal reveal-delay-2">
+            <div class="process-step" style="display: flex; align-items: baseline; gap: 1.5rem;">
+              <span class="process-number">03</span>
+              <div class="stack stack--md">
+                <h2 class="heading-lg">Hand Stitching</h2>
+                <p class="body-text">Every stitch placed by hand. Contrast thread on darker colourways for visible craft detail. No machines. No shortcuts. No exceptions.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span class="section-label">Stitching</span>
+    </section>
+
+    <!-- Video -->
+    <section class="section bg-deep section-pad" data-section="Craftsmanship - Video">
+      <div class="container" style="max-width: 900px;">
+        <div class="center reveal" style="margin-bottom: 2rem;">
+          <p class="overline">Behind the scenes</p>
+        </div>
+        <div class="img-frame img-wide reveal reveal-delay-1">
+          <img src="./img/craftsman-workshop.png" alt="Making process film — behind the scenes">
+        </div>
+        <p class="body-text center reveal reveal-delay-2" style="max-width: 500px; margin: 2rem auto 0;">The making story is central. A short film showing hand-stitching, moulding, and material selection.</p>
+      </div>
+      <span class="section-label">Video</span>
+    </section>
+
+  </div>
+
+  <!-- ════════════════════════════════════════════ -->
+  <!-- CONTACT                                      -->
+  <!-- ════════════════════════════════════════════ -->
+  <div id="contact" class="page">
+
+    <section class="section bg-warm section-pad--lg" data-section="Contact - Hero" style="padding-top: 12rem;">
+      <div class="container container--narrow center">
+        <p class="overline reveal" style="margin-bottom: 2rem;">Get in touch</p>
+        <h1 class="heading-display reveal reveal-delay-1">Contact</h1>
+        <div class="divider divider--center reveal reveal-delay-2" style="margin-top: 2.5rem;"></div>
+        <p class="body-text reveal reveal-delay-3" style="margin-top: 2rem;">contact@thetarrantcollective.com</p>
+      </div>
+      <span class="section-label">Contact Hero</span>
+    </section>
+
+    <section class="section bg-secondary section-pad" data-section="Contact - Form">
+      <div class="container container--narrow">
+        <div class="stack stack--md reveal">
+          <div class="grid-2" style="gap: 1rem;">
+            <span class="form-input" style="color: var(--text-muted);">First name</span>
+            <span class="form-input" style="color: var(--text-muted);">Last name</span>
+          </div>
+          <span class="form-input" style="color: var(--text-muted);">Email address</span>
+          <span class="form-input form-input--textarea" style="color: var(--text-muted); display: block;">Your message</span>
+          <div class="reveal reveal-delay-1">
+            <span class="btn btn--filled">Send Message <span class="btn-arrow"></span></span>
+          </div>
+        </div>
+      </div>
+      <span class="section-label">Contact Form</span>
+    </section>
+
+  </div>
+
+  <!-- ════════════════════════════════════════════ -->
+  <!-- COMMENT MODAL                                -->
+  <!-- ════════════════════════════════════════════ -->
+  <div class="modal-overlay" id="comment-modal">
+    <div class="modal-content">
+      <button class="modal-close">&times;</button>
+      <p class="modal-heading">Comment on:</p>
+      <p class="modal-section-name" id="modal-section-name"></p>
+
+      <div class="modal-fields">
+        <form class="modal-form" name="wireframe-c-feedback" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="wireframe-c-feedback">
+          <input type="hidden" name="section" id="form-section">
+          <input type="hidden" name="palette" id="form-palette">
+          <p style="display:none;"><input name="bot-field"></p>
+          <input class="form-input" type="text" name="name" placeholder="Your name (optional)">
+          <textarea class="form-input form-input--textarea" name="comment" placeholder="Your feedback on this section..." required></textarea>
+          <button class="modal-submit" type="submit">Submit Comment</button>
+        </form>
+      </div>
+
+      <div class="modal-success">
+        <p>Thank you.</p>
+        <small>Your feedback has been submitted.</small>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
