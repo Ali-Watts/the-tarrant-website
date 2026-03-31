@@ -588,6 +588,21 @@ body {
   .wf-input { min-width: 100%; }
 }
 
+/* ── BACK LINK ── */
+.wf-back {
+  font-family: 'Jost', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--wf-text-muted);
+  text-decoration: none;
+  transition: color 0.3s;
+  white-space: nowrap;
+}
+
+.wf-back:hover { color: var(--wf-accent); }
+
 /* ── FEATURE ICONS ── */
 .feature-icon {
   width: 48px;

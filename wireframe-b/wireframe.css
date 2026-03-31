@@ -145,6 +145,21 @@ body {
   color: var(--wf-accent);
 }
 
+.wf-back {
+  font-family: 'Jost', sans-serif;
+  font-size: 0.65rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--wf-text-muted);
+  text-decoration: none;
+  padding: 0.5rem 0;
+  display: block;
+  transition: color 0.3s;
+}
+
+.wf-back:hover { color: var(--wf-accent); }
+
 .wf-sidebar-footer {
   margin-top: auto;
   padding-top: 2rem;

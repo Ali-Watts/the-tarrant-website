@@ -669,6 +669,21 @@ body::before {
   color: var(--text-muted);
 }
 
+/* ── BACK LINK ── */
+.nav-back {
+  font-family: 'Jost', sans-serif;
+  font-size: 0.65rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color 0.3s;
+  white-space: nowrap;
+}
+
+.nav-back:hover { color: var(--accent); }
+
 /* ── FEATURE ICONS ── */
 .feature-icon {
   width: 48px;
